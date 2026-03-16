@@ -1,0 +1,96 @@
+{
+  "tamaño_porcion": "200 ml",
+  "calorias_porcion": "30,8 kcal (127,4 kJ)",
+  "nutrientes": [
+    {
+      "nutriente": "Contenido Energético",
+      "cantidad_porcion": "30,8 kcal (127,4 kJ)",
+      "cantidad_100g_ml": "15,4 kcal (63,7 kJ)",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Proteínas",
+      "cantidad_porcion": "0,8 g",
+      "cantidad_100g_ml": "0,4 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasas totales",
+      "cantidad_porcion": "2,8 g",
+      "cantidad_100g_ml": "1,4 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasas saturadas",
+      "cantidad_porcion": "0,2 g",
+      "cantidad_100g_ml": "0,1 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasas trans",
+      "cantidad_porcion": "0,0 mg",
+      "cantidad_100g_ml": "0,0 mg",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Colesterol",
+      "cantidad_porcion": "0,0 mg",
+      "cantidad_100g_ml": "0,0 mg",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Hidratos de carbono disponibles",
+      "cantidad_porcion": "0,6 g",
+      "cantidad_100g_ml": "0,3 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Azúcares",
+      "cantidad_porcion": "0,2 g",
+      "cantidad_100g_ml": "0,1 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Azúcares añadidos",
+      "cantidad_porcion": "0,0 g",
+      "cantidad_100g_ml": "0,0 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Fibra dietética",
+      "cantidad_porcion": "0,4 g",
+      "cantidad_100g_ml": "0,2 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Sodio",
+      "cantidad_porcion": "34,0 mg",
+      "cantidad_100g_ml": "17,0 mg",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Calcio",
+      "cantidad_porcion": "240,0 mg",
+      "cantidad_100g_ml": "120,0 mg",
+      "porcentaje_vd": "25%"
+    },
+    {
+      "nutriente": "Vitamina E (alfa tocoferol)",
+      "cantidad_porcion": "8,4 mg",
+      "cantidad_100g_ml": "4,2 mg",
+      "porcentaje_vd": "80%"
+    },
+    {
+      "nutriente": "Vitamina A (equivalentes de retinol)",
+      "cantidad_porcion": "125,0 µg",
+      "cantidad_100g_ml": "62,5 µg",
+      "porcentaje_vd": "20%"
+    },
+    {
+      "nutriente": "Vitamina D2",
+      "cantidad_porcion": "2,0 µg",
+      "cantidad_100g_ml": "1,0 µg",
+      "porcentaje_vd": "20%"
+    }
+  ]
+}

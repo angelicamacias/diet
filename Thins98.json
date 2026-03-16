@@ -1,0 +1,138 @@
+{
+  "tamaño_porcion": "42,5 g (1 pieza)",
+  "calorias_porcion": "98 kcal (413 kJ)",
+  "nutrientes": [
+    {
+      "nutriente": "Contenido energético",
+      "cantidad_porcion": "98 kcal (413 kJ)",
+      "cantidad_100g_ml": "230 kcal (972 kJ)",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Proteínas",
+      "cantidad_porcion": "2,8 g",
+      "cantidad_100g_ml": "6,6 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasas Totales (Lípidos)",
+      "cantidad_porcion": "1,2 g",
+      "cantidad_100g_ml": "2,8 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasas saturadas",
+      "cantidad_porcion": "0,3 g",
+      "cantidad_100g_ml": "0,6 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasas trans",
+      "cantidad_porcion": "0 mg",
+      "cantidad_100g_ml": "0 mg",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasas monoinsaturadas",
+      "cantidad_porcion": "0,4 g",
+      "cantidad_100g_ml": "0,9 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasas poliinsaturadas",
+      "cantidad_porcion": "0,5 g",
+      "cantidad_100g_ml": "1,3 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Colesterol",
+      "cantidad_porcion": "0 mg",
+      "cantidad_100g_ml": "0 mg",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Hidratos de carbono disponibles",
+      "cantidad_porcion": "16,7 g",
+      "cantidad_100g_ml": "39,3 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Azúcares",
+      "cantidad_porcion": "1,8 g",
+      "cantidad_100g_ml": "4,2 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Azúcares añadidos",
+      "cantidad_porcion": "1,2 g",
+      "cantidad_100g_ml": "2,8 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Fibra dietética",
+      "cantidad_porcion": "4,1 g",
+      "cantidad_100g_ml": "9,6 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Sodio",
+      "cantidad_porcion": "177 mg",
+      "cantidad_100g_ml": "416 mg",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Zinc",
+      "cantidad_porcion": "1,2 mg",
+      "cantidad_100g_ml": null,
+      "porcentaje_vd": "10%"
+    },
+    {
+      "nutriente": "Vitamina B2",
+      "cantidad_porcion": "0,1 mg",
+      "cantidad_100g_ml": null,
+      "porcentaje_vd": "9%"
+    },
+    {
+      "nutriente": "Niacina",
+      "cantidad_porcion": "1,3 mg",
+      "cantidad_100g_ml": null,
+      "porcentaje_vd": "8%"
+    },
+    {
+      "nutriente": "Hierro",
+      "cantidad_porcion": "1,3 mg",
+      "cantidad_100g_ml": null,
+      "porcentaje_vd": "7%"
+    },
+    {
+      "nutriente": "Vitamina B6",
+      "cantidad_porcion": "0,1 mg",
+      "cantidad_100g_ml": null,
+      "porcentaje_vd": "7%"
+    },
+    {
+      "nutriente": "Ácido Fólico",
+      "cantidad_porcion": "43 µg",
+      "cantidad_100g_ml": null,
+      "porcentaje_vd": "11%"
+    },
+    {
+      "nutriente": "Vitamina B1",
+      "cantidad_porcion": "0,2 mg",
+      "cantidad_100g_ml": null,
+      "porcentaje_vd": "18%"
+    },
+    {
+      "nutriente": "Yodo",
+      "cantidad_porcion": "30 µg",
+      "cantidad_100g_ml": null,
+      "porcentaje_vd": "20%"
+    },
+    {
+      "nutriente": "Magnesio",
+      "cantidad_porcion": "13 mg",
+      "cantidad_100g_ml": null,
+      "porcentaje_vd": "5%"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "tamaño_porcion": "100g",
+  "calorias_porcion": "260 kcal (1 103.5 kJ)",
+  "nutrientes": [
+    {
+      "nutriente": "Contenido Energético",
+      "cantidad_porcion": "260 kcal (1 103.5 kJ)",
+      "cantidad_100g_ml": "260 kcal (1 103.5 kJ)",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Proteínas",
+      "cantidad_porcion": "9.4 g",
+      "cantidad_100g_ml": "9.4 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasas Totales",
+      "cantidad_porcion": "1.2 g",
+      "cantidad_100g_ml": "1.2 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasas Saturadas",
+      "cantidad_porcion": "0.6 g",
+      "cantidad_100g_ml": "0.6 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasas Trans",
+      "cantidad_porcion": "0 mg",
+      "cantidad_100g_ml": "0 mg",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Hidratos de Carbono Disponibles",
+      "cantidad_porcion": "52.9 g",
+      "cantidad_100g_ml": "52.9 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Azúcares",
+      "cantidad_porcion": "4.7 g",
+      "cantidad_100g_ml": "4.7 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Azúcares añadidos",
+      "cantidad_porcion": "3.5 g",
+      "cantidad_100g_ml": "3.5 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Fibra Dietética",
+      "cantidad_porcion": "2.4 g",
+      "cantidad_100g_ml": "2.4 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Sodio",
+      "cantidad_porcion": "458.8 mg",
+      "cantidad_100g_ml": "458.8 mg",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Vitamina D",
+      "cantidad_porcion": "0 µg",
+      "cantidad_100g_ml": "0 µg",
+      "porcentaje_vd": "0%"
+    },
+    {
+      "nutriente": "Calcio",
+      "cantidad_porcion": "70 mg",
+      "cantidad_100g_ml": "70 mg",
+      "porcentaje_vd": "5%"
+    },
+    {
+      "nutriente": "Hierro",
+      "cantidad_porcion": "3 mg",
+      "cantidad_100g_ml": "3 mg",
+      "porcentaje_vd": "17%"
+    },
+    {
+      "nutriente": "Potasio",
+      "cantidad_porcion": "82 mg",
+      "cantidad_100g_ml": "82 mg",
+      "porcentaje_vd": "2%"
+    }
+  ]
+}
