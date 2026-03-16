@@ -1,0 +1,90 @@
+{
+  "tamaño_porcion": "3 316 mg (2 Cápsulas)",
+  "calorias_porcion": "141 kJ (34 kcal)",
+  "nutrientes": [
+    {
+      "nutriente": "Contenido Energético",
+      "cantidad_porcion": "141 kJ (34 kcal)",
+      "cantidad_100g_ml": "8,505 kJ (2,053 kcal)",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Proteínas",
+      "cantidad_porcion": "0,88 g",
+      "cantidad_100g_ml": "53,08 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasas (Lípidos)",
+      "cantidad_porcion": "2,92 g",
+      "cantidad_100g_ml": "176,12 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasa Saturada",
+      "cantidad_porcion": "0,84 g",
+      "cantidad_100g_ml": "50,66 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasa Poliinsaturada",
+      "cantidad_porcion": "1,24 g",
+      "cantidad_100g_ml": "74,79 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasa Monoinsaturada",
+      "cantidad_porcion": "0,68 g",
+      "cantidad_100g_ml": "41,01 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasa Trans",
+      "cantidad_porcion": "0,02 g",
+      "cantidad_100g_ml": "1,21 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Colesterol",
+      "cantidad_porcion": "24,0 mg",
+      "cantidad_100g_ml": "1,477.53 mg",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Carbohidratos (Hidratos de Carbono)",
+      "cantidad_porcion": "1,06 g",
+      "cantidad_100g_ml": "63,93 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Azúcares",
+      "cantidad_porcion": "0 g",
+      "cantidad_100g_ml": "0 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Fibra Dietética",
+      "cantidad_porcion": "0,04 g",
+      "cantidad_100g_ml": "2,41 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Sodio",
+      "cantidad_porcion": "2,5 mg",
+      "cantidad_100g_ml": "150,78 mg",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Aceite de Pescado",
+      "cantidad_porcion": "2,400 mg",
+      "cantidad_100g_ml": "144,753 mg",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Ácidos Grasos Omega 3",
+      "cantidad_porcion": "720,0 mg",
+      "cantidad_100g_ml": "43,426 mg",
+      "porcentaje_vd": null
+    }
+  ]
+}

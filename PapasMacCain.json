@@ -1,0 +1,84 @@
+{
+  "tamaño_porcion": "100 g",
+  "calorias_porcion": "175.93 kcal (742.84 kJ)",
+  "nutrientes": [
+    {
+      "nutriente": "Contenido energético",
+      "cantidad_porcion": "175.93 kcal (742.84 kJ)",
+      "cantidad_100g_ml": "175.93 kcal (742.84 kJ)",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Proteínas",
+      "cantidad_porcion": "3.85 g",
+      "cantidad_100g_ml": "3.85 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasas totales",
+      "cantidad_porcion": "3.89 g",
+      "cantidad_100g_ml": "3.89 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasas saturadas",
+      "cantidad_porcion": "0.61 g",
+      "cantidad_100g_ml": "0.61 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasas trans",
+      "cantidad_porcion": "0.00 mg",
+      "cantidad_100g_ml": "0.00 mg",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasas poliinsaturadas",
+      "cantidad_porcion": "1.54 g",
+      "cantidad_100g_ml": "1.54 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasas monoinsaturadas",
+      "cantidad_porcion": "1.57 g",
+      "cantidad_100g_ml": "1.57 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Colesterol",
+      "cantidad_porcion": "0.00 mg",
+      "cantidad_100g_ml": "0.00 mg",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Hidratos de carbono disponibles",
+      "cantidad_porcion": "31.38 g",
+      "cantidad_100g_ml": "31.38 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Azúcares",
+      "cantidad_porcion": "0.11 g",
+      "cantidad_100g_ml": "0.11 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Azúcares añadidos",
+      "cantidad_porcion": "0.11 g",
+      "cantidad_100g_ml": "0.11 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Fibra dietética",
+      "cantidad_porcion": "3.63 g",
+      "cantidad_100g_ml": "3.63 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Sodio",
+      "cantidad_porcion": "678.00 mg",
+      "cantidad_100g_ml": "678.00 mg",
+      "porcentaje_vd": null
+    }
+  ]
+}
