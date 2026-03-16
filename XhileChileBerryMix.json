@@ -1,0 +1,66 @@
+{
+  "tamaño_porcion": "100g",
+  "calorias_porcion": "367 kcal (1 558.5 kJ)",
+  "nutrientes": [
+    {
+      "nutriente": "Contenido energético",
+      "cantidad_porcion": "367 kcal (1 558.5 kJ)",
+      "cantidad_100g_ml": "367 kcal (1 558.5 kJ)",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasas totales",
+      "cantidad_porcion": "1g",
+      "cantidad_100g_ml": "1g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasas saturadas",
+      "cantidad_porcion": "0g",
+      "cantidad_100g_ml": "0g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasas trans",
+      "cantidad_porcion": "0mg",
+      "cantidad_100g_ml": "0mg",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Sodio",
+      "cantidad_porcion": "1 225mg",
+      "cantidad_100g_ml": "1 225mg",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Hidratos de carbono disponibles",
+      "cantidad_porcion": "89.5g",
+      "cantidad_100g_ml": "89.5g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Azúcares",
+      "cantidad_porcion": "74g",
+      "cantidad_100g_ml": "74g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Azúcares añadidos",
+      "cantidad_porcion": "60g",
+      "cantidad_100g_ml": "60g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Fibra dietética",
+      "cantidad_porcion": "0g",
+      "cantidad_100g_ml": "0g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Proteínas",
+      "cantidad_porcion": "0g",
+      "cantidad_100g_ml": "0g",
+      "porcentaje_vd": null
+    }
+  ]
+}
