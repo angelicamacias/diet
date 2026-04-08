@@ -108,7 +108,10 @@
       <input type="file" id="photoInput" accept="image/*" />
     </div>
 
-    <img id="preview" alt="Preview" />
+    <div id="previewWrap" style="display:none; position:relative; margin-bottom:1rem;">
+      <img id="preview" alt="Preview" style="max-width:100%; border-radius:8px; display:block;" />
+      <button type="button" onclick="clearPhoto()" style="position:absolute; top:.4rem; right:.4rem; width:auto; padding:.25rem .5rem; font-size:.8rem; background:#dc2626; border-radius:6px;">✕ Remove</button>
+    </div>
 
     <button id="uploadBtn" onclick="uploadFood()" disabled>Scan label</button>
 
@@ -135,24 +138,44 @@
 </main>
 
 <script>
-  const photoInput = document.getElementById('photoInput');
-  const preview    = document.getElementById('preview');
-  const uploadBtn  = document.getElementById('uploadBtn');
-  const dropZone   = document.getElementById('dropZone');
-  const status     = document.getElementById('status');
+  const photoInput  = document.getElementById('photoInput');
+  const preview     = document.getElementById('preview');
+  const previewWrap = document.getElementById('previewWrap');
+  const uploadBtn   = document.getElementById('uploadBtn');
+  const dropZone    = document.getElementById('dropZone');
+  const status      = document.getElementById('status');
 
   // Show preview when a file is selected
   photoInput.addEventListener('change', () => {
     const file = photoInput.files[0];
     if (!file) return;
     preview.src = URL.createObjectURL(file);
-    preview.style.display = 'block';
+    previewWrap.style.display = 'block';
     uploadBtn.disabled = false;
     dropZone.textContent = file.name;
     const inp = document.createElement('input');
     inp.type = 'file'; inp.id = 'photoInput'; inp.accept = 'image/*';
     inp.addEventListener('change', () => photoInput.dispatchEvent(new Event('change')));
   });
+
+  function clearPhoto() {
+    preview.src = '';
+    previewWrap.style.display = 'none';
+    uploadBtn.disabled = true;
+    dropZone.innerHTML = 'Click or drag an image here';
+    const inp = document.createElement('input');
+    inp.type = 'file'; inp.id = 'photoInput'; inp.accept = 'image/*';
+    inp.addEventListener('change', () => inp.dispatchEvent(new Event('change')));
+    dropZone.appendChild(inp);
+    inp.addEventListener('change', () => {
+      const file = inp.files[0];
+      if (!file) return;
+      preview.src = URL.createObjectURL(file);
+      previewWrap.style.display = 'block';
+      uploadBtn.disabled = false;
+      dropZone.textContent = file.name;
+    });
+  }
 
   // Drag-and-drop
   dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('drag-over'); });
