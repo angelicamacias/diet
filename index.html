@@ -124,6 +124,7 @@
   <!-- Foods list -->
   <div class="card">
     <h2>Foods in database</h2>
+    <input type="text" id="foodSearch" placeholder="Search…" oninput="filterFoods()" style="margin-bottom:.75rem" />
     <div class="foods-table-wrap">
       <table class="foods-table">
         <thead><tr><th>Name</th><th></th></tr></thead>
@@ -200,6 +201,14 @@
   function setStatus(msg, type) {
     status.textContent = msg;
     status.className   = type;
+  }
+
+  function filterFoods() {
+    const q = document.getElementById('foodSearch').value.toLowerCase();
+    document.querySelectorAll('#foodsList tr').forEach(row => {
+      const name = row.querySelector('.name-cell')?.textContent.toLowerCase() ?? '';
+      row.style.display = name.includes(q) ? '' : 'none';
+    });
   }
 
   async function loadFoods() {
