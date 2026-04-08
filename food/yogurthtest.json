@@ -1,0 +1,90 @@
+{
+  "tamaño_porcion": "1/4 Taza (54 g)",
+  "calorias_porcion": "60",
+  "nutrientes": [
+    {
+      "nutriente": "Grasa Total",
+      "cantidad_porcion": "0 g",
+      "cantidad_100g_ml": "0 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasa Saturada",
+      "cantidad_porcion": "0 g",
+      "cantidad_100g_ml": "0 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Grasa Trans",
+      "cantidad_porcion": "0 mg",
+      "cantidad_100g_ml": "0 mg",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Carbohidratos Totales",
+      "cantidad_porcion": "15 g",
+      "cantidad_100g_ml": "28 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Fibra dietaria",
+      "cantidad_porcion": "0 g",
+      "cantidad_100g_ml": "0 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Azúcares Totales",
+      "cantidad_porcion": "11 g",
+      "cantidad_100g_ml": "21 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Az. Añadidos",
+      "cantidad_porcion": "0 g",
+      "cantidad_100g_ml": "21 g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Proteína",
+      "cantidad_porcion": "0 g",
+      "cantidad_100g_ml": "0g",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Sodio",
+      "cantidad_porcion": "8 mg",
+      "cantidad_100g_ml": "15 mg",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Vitamina A",
+      "cantidad_porcion": "0 µg ER",
+      "cantidad_100g_ml": "0 µg ER",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Vitamina D",
+      "cantidad_porcion": "0 µg",
+      "cantidad_100g_ml": "0 µg",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Hierro",
+      "cantidad_porcion": "0 mg",
+      "cantidad_100g_ml": "0 mg",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Calcio",
+      "cantidad_porcion": "2.0 mg",
+      "cantidad_100g_ml": "0 mg",
+      "porcentaje_vd": null
+    },
+    {
+      "nutriente": "Zinc",
+      "cantidad_porcion": "0.05 mg",
+      "cantidad_100g_ml": "0.10 mg",
+      "porcentaje_vd": null
+    }
+  ]
+}
