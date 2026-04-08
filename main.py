@@ -28,6 +28,8 @@ app.add_middleware(
 )
 
 FOOD_DIR = os.path.join(os.path.dirname(__file__), "food")
+TRACKING_DIR = os.path.join(os.path.dirname(__file__), "food_tracking")
+ALLOWED_USERS = {"AM", "JC"}
 STATIC_DIR = os.path.join(os.path.dirname(__file__), "static")
 
 app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
@@ -232,6 +234,129 @@ async def upload_food_photo(
         "data": food_data,
         "github": github_result,
     }
+
+
+@app.post("/chat")
+async def chat(body: dict):
+    """Chat with Claude about your daily food intake using the food database as context."""
+    messages = body.get("messages", [])
+
+    # Load all food data as context
+    os.makedirs(FOOD_DIR, exist_ok=True)
+    foods = {}
+    for f in os.listdir(FOOD_DIR):
+        if f.endswith(".json"):
+            name = f.replace(".json", "")
+            with open(os.path.join(FOOD_DIR, f), encoding="utf-8") as fh:
+                foods[name] = json.load(fh)
+
+    system = (
+        "You are a friendly nutrition assistant. "
+        "The user has a food database with the following foods (name → nutrition data):\n\n"
+        + json.dumps(foods, ensure_ascii=False, indent=2)
+        + "\n\nWhen the user tells you what they ate, use the database to calculate totals. "
+        "If a food is not in the database, estimate from common knowledge and mention it. "
+        "Present totals clearly: Calories, Fat, Carbohydrates, Protein. "
+        "After showing the totals, ask if they want to save this as today's intake. "
+        "When the user confirms they want to save, end your message with this block (no extra text after it):\n"
+        "<SAVE>\n"
+        '{"items": [{"food": "<name>", "amount": "<amount>"}], '
+        '"totals": {"calories": <number>, "fat_g": <number>, "carbs_g": <number>, "protein_g": <number>}}\n'
+        "</SAVE>"
+    )
+
+    client = anthropic.Anthropic()
+    response = client.messages.create(
+        model="claude-opus-4-6",
+        max_tokens=2048,
+        system=system,
+        messages=messages,
+    )
+
+    raw = response.content[0].text
+
+    # Extract save data if Claude included it
+    save_data = None
+    if "<SAVE>" in raw and "</SAVE>" in raw:
+        start = raw.index("<SAVE>") + len("<SAVE>")
+        end = raw.index("</SAVE>")
+        try:
+            save_data = json.loads(raw[start:end].strip())
+        except json.JSONDecodeError:
+            pass
+        raw = raw[:raw.index("<SAVE>")].strip()
+
+    return {"response": raw, "save_data": save_data}
+
+
+@app.post("/logs")
+async def save_log(body: dict):
+    """Append a nutrition entry to a user's daily log file."""
+    from datetime import datetime
+
+    user = body.get("user")
+    date = body.get("date")
+
+    if user not in ALLOWED_USERS:
+        raise HTTPException(status_code=400, detail=f"Invalid user. Must be one of: {ALLOWED_USERS}")
+    if not date or not re.match(r"^\d{4}-\d{2}-\d{2}$", date):
+        raise HTTPException(status_code=400, detail="Invalid or missing date (YYYY-MM-DD)")
+
+    user_dir = os.path.join(TRACKING_DIR, user)
+    os.makedirs(user_dir, exist_ok=True)
+    log_path = os.path.join(user_dir, f"{date}.json")
+
+    # Load existing log or start fresh
+    if os.path.exists(log_path):
+        with open(log_path, encoding="utf-8") as f:
+            log = json.load(f)
+    else:
+        log = {"date": date, "user": user, "entries": [], "day_totals": {"calories": 0, "fat_g": 0, "carbs_g": 0, "protein_g": 0}}
+
+    # Append new entry with current time
+    entry = {
+        "time": datetime.now().strftime("%H:%M"),
+        "items": body.get("items", []),
+        "totals": body.get("totals", {}),
+    }
+    log["entries"].append(entry)
+
+    # Recalculate day totals
+    for key in ("calories", "fat_g", "carbs_g", "protein_g"):
+        log["day_totals"][key] = sum(e["totals"].get(key, 0) for e in log["entries"])
+
+    with open(log_path, "w", encoding="utf-8") as f:
+        json.dump(log, f, ensure_ascii=False, indent=2)
+
+    return {"message": f"Entry added for {user} on {date}", "entry_count": len(log["entries"]), "day_totals": log["day_totals"]}
+
+
+@app.get("/logs/{user}")
+def get_user_logs(user: str):
+    """List all log dates for a user."""
+    if user not in ALLOWED_USERS:
+        raise HTTPException(status_code=400, detail="Invalid user")
+
+    user_dir = os.path.join(TRACKING_DIR, user)
+    if not os.path.exists(user_dir):
+        return {"user": user, "logs": []}
+
+    dates = sorted([f.replace(".json", "") for f in os.listdir(user_dir) if f.endswith(".json")], reverse=True)
+    return {"user": user, "logs": dates}
+
+
+@app.get("/logs/{user}/{date}")
+def get_user_log(user: str, date: str):
+    """Get a specific day's log for a user."""
+    if user not in ALLOWED_USERS:
+        raise HTTPException(status_code=400, detail="Invalid user")
+
+    log_path = os.path.join(TRACKING_DIR, user, f"{date}.json")
+    if not os.path.exists(log_path):
+        raise HTTPException(status_code=404, detail="Log not found")
+
+    with open(log_path, encoding="utf-8") as f:
+        return json.load(f)
 
 
 @app.delete("/foods/{food_name}")
