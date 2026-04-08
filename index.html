@@ -105,7 +105,7 @@
     <label>Nutrition label photo</label>
     <div class="drop-zone" id="dropZone">
       Click or drag an image here
-      <input type="file" id="photoInput" accept="image/*" capture="environment" />
+      <input type="file" id="photoInput" accept="image/*" />
     </div>
 
     <img id="preview" alt="Preview" />
@@ -150,7 +150,7 @@
     uploadBtn.disabled = false;
     dropZone.textContent = file.name;
     const inp = document.createElement('input');
-    inp.type = 'file'; inp.id = 'photoInput'; inp.accept = 'image/*'; inp.capture = 'environment';
+    inp.type = 'file'; inp.id = 'photoInput'; inp.accept = 'image/*';
     inp.addEventListener('change', () => photoInput.dispatchEvent(new Event('change')));
   });
 
